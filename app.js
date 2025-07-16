@@ -1,5 +1,5 @@
 const clientId = 'ac783809b3fd427faa79b5a2f420d04a';
-const redirectUri = 'https://jai9997.github.io/spotify-backup/';
+const redirectUri = 'https://jai9997.github.io/Spotify-backup/';
 const scopes = ['user-library-read', 'playlist-read-private', 'playlist-modify-public', 'playlist-modify-private'];
 
 document.getElementById('login-btn').onclick = () => {
