@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Spotify Backup</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Backup Tool</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
-  <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+  <div class="bg-white shadow-xl rounded-xl p-6 max-w-md w-full">
     <h1 class="text-2xl font-bold text-center mb-6">🎵 Spotify Backup Tool</h1>
-    
-    <button id="login-btn" class="w-full bg-green-500 text-white py-2 rounded mb-4 hover:bg-green-600 transition">
+
+    <button id="login-btn" class="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-2 rounded mb-4 transition">
       Login with Spotify
     </button>
 
-    <button id="export-btn" disabled class="w-full bg-blue-500 text-white py-2 rounded mb-4 hover:bg-blue-600 transition">
+    <button id="export-btn" disabled class="bg-blue-500 hover:bg-blue-600 text-white font-semibold w-full py-2 rounded mb-4 transition">
       Export Library
     </button>
 
-    <input type="file" id="import-file" class="block w-full text-sm text-gray-500 mb-4" />
-    
-    <p class="text-xs text-gray-400 text-center">This tool saves and restores your playlists & liked songs (not actual audio).</p>
+    <input type="file" id="import-file" class="w-full text-sm mb-2" />
+    <p class="text-xs text-gray-500 text-center">Backs up playlists & liked songs as JSON. No music files are saved.</p>
   </div>
 
   <script src="app.js"></script>
